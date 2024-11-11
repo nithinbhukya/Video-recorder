@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+}
+
+.action-container {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:50%;
+    right: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.record-button-container {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.capture-button-container {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.record-button {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.capture-button {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.scale-record {
+    animation-name: scale-record;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes scale-record {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.scale-capture {
+    animation-name: scale-record;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes scale-capture {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.count-container {
+    background-color: white;
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 5%;
+}
+
+.timer {
+    display: none;
+}
